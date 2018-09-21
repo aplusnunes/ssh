@@ -4,6 +4,6 @@ class ssh::config {
     mode   => '0600',
     owner  => 'root',
     group  => 'root',
-    source => 'puppet:///modules/ssh/files/sshd_config'
+    source => 'puppet:///modules/ssh/sshd_config'
  }
 }
