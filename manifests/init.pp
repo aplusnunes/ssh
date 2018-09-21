@@ -53,5 +53,5 @@ class ssh(
  Class['::ssh::install']
  -> Class['::ssh::config']
  ~> Class['::ssh::service']
- -> Class[ssh']
+ -> Class['ssh']
 }
