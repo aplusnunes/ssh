@@ -1,5 +1,6 @@
 class ssh::params {
- case $facts['os']['family'] {
+$permit_root_login = false 
+case $facts['os']['family'] {
   'Debian': {
    $package_name = 'openssh-server'
    $service_name = 'ssh'

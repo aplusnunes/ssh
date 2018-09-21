@@ -43,8 +43,9 @@
 # Copyright 2018 Your name here, unless otherwise noted.
 #
 class ssh(
- String $package_name = $::ssh::params::package_name,
- String $service_name = $::ssh::params::service_name,
+ Boolean $permit_root_login = $::ssh::params::permit_root_login,
+ String $package_name       = $::ssh::params::package_name,
+ String $service_name       = $::ssh::params::service_name,
 )inherits ::ssh::params {
  class { '::ssh::install': }
  class { '::ssh::config': }
